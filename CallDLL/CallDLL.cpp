@@ -2,10 +2,16 @@
 //
 
 #include "stdafx.h"
-
+#include "../DLL/DLL.h"
+#pragma comment(lib, "DLL.lib")
 
 int main()
 {
-    return 0;
-}
+	int x = add(10, 5);
+	_TCHAR buff[256] = { 0 };
+	_itot_s(x, buff, 256, 10);
 
+	::MessageBox(NULL, buff, _T("10 + 5 ="), MB_OK);
+
+	return 0;
+}
