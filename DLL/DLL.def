@@ -1,0 +1,3 @@
+LIBRARY DLL
+EXPORTS
+   add   @1

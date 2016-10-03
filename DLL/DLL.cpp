@@ -4,7 +4,7 @@
 #include "stdafx.h"
 #include "DLL.h"
 
-int WINAPI add(int a, int b)
+int _stdcall add(int a, int b)
 {
 	return a + b;
 }
